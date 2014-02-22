@@ -7,53 +7,63 @@
 	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	</head>
-	<body id="cuerpo">
+
+	<body id="cuerpo" >
+		<center>
+			<div id="cont" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCsDnMhkuavliKZq7VtlX57D9Y-M4TesDPrcRQwpNM8_26fYji)" >
+
+				<label id="texto1">Registro</label>
+
+				<form  id="formulario" class="form-horizontal" role="form"  action="registro.php" method="post" onsubmit="return confirm('submit?');" >
+
+					<div class="form-group">
+						<label for="first_name" class="col-sm-2 control-label">Nombre</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="Nombre" name="index[first_name]">
+						</div>
+					</div>
 
 
-		<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label for="last_name" class="col-sm-2 control-label">Apellido</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="Apellido" name="index[last_name]">
+						</div>
+					</div>
 
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
-				<div class="col-sm-10">
-					<input type="texto" class="form-control" id="inputEmail3" placeholder="Nombre">
-				</div>
+					<div class="form-group">
+						<label for="cedula" class="col-sm-2 control-label">Cedula</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="Cedula" name="index[cedula]">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="email" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="index[email]">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="telefono" class="col-sm-2 control-label">Teléfono</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="Teléfono" name="index[telefono]">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+
+		                     <input type="submit"class="btn btn-default" value="Save"></input>
+
+						</div>
+					</div>
+				</form>
 			</div>
+		</center>
+		<br>
+		<br>
 
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-2 control-label">Apellido</label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="inputEmail3" placeholder="Apellido">
-				</div>
-			</div>
-
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-2 control-label">Cedula</label>
-				<div class="col-sm-10">
-					<input type="email" class="form-control" id="inputEmail3" placeholder="Cedula">
-				</div>
-			</div>
-
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-				<div class="col-sm-10">
-					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-				</div>
-			</div>
-
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-2 control-label">Teléfono</label>
-				<div class="col-sm-10">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Teléfono">
-				</div>
-			</div>
-			
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default">Sign in</button>
-				</div>
-			</div>
-		</form>
-
-
-</body>
-</html>
+	</body>
+	</html>
