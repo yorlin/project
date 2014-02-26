@@ -1,27 +1,23 @@
 <?php
+$fecha = date("d/m/Y");
+$name = $_POST["firstname"];
+$lastName = $_POST["lastName"];
+$number = $_POST["number"];
+$email = $_POST["email"];
+$phone = $_POST["phone"];
 
+$fecha=str_replace("/", "-", $fecha);
+$ruta = 'C:/xampp/htdocs/'.$fecha.'.csv';
 
-$employee = $_REQUEST['index'];
+$lista = array (
+	array($name, $lastName, $number, $email,$phone)
+	);
 
-echo $registro['first_name'];
-foreach ($registro as $key => $value) {
-    echo "$key = $value <br />";
+$fp = fopen($ruta,'a+');
+
+foreach ($lista as $campos) {
+	fputcsv($fp, $campos);
 }
 
-
-
-
-
-
-
-
-
-
+fclose($fp);
 ?>
-
-<script type="text/javascript"> 
-if(confirm('Saved Succesfully, do you want to add another one?')) {
-    window.location.href = 'index.html';
-}
-
-</script>

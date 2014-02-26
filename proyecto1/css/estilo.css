@@ -1,10 +1,28 @@
-#formulario{
-	height: 30%;
-	width: 30%;
-	 margin-top: 5%;
-	 font-size: 15px;
 
-	
+#h1{
+
+  text-align: center;
+  color: green;
+  text-transform: uppercase;
+
+  font-family: 'Raleway', cursive;
+  font-weight: 100;
+  margin-top: -39.7%;
+  background: -webkit-linear-gradient(left, black, #eee, black);
+  background: -moz-linear-gradient(left, black, #eee, black);
+  background: -ms-linear-gradient(left, black, #eee, black);
+  background: -o-linear-gradient(left, black, #eee, black);
+}
+
+ 
+
+
+
+
+.img-circle{
+	margin-left: 75%;
+	margin-top: -30%;
+
 }
 #inputEmail3{
 	margin-left: 15%;
@@ -16,7 +34,14 @@
     margin-top: 10%;
    
 }
+.centered{
+	 float: none;
+    margin: 0 auto;
+    margin-top: 5%;
 
+	border-radius: 5%;
+    background-color: #C0D9D9
+}
 #cont{
  background-color: #C0D9D9;
  width: 50%;
@@ -25,7 +50,7 @@
 }
 
 #cuerpo{
-background-color: #5F9F9F;
+background-color: #70D8D5;
 }
 #texto{
 	border: solid;
