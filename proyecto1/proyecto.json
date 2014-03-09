@@ -1,0 +1,13 @@
+{
+"database_host" :  "localhost",
+"database_name" :  "proyecto1",
+"database_user" :  "root",
+"database_pass" :  "",
+"email_from" : "elodia900@gmail.com",
+"email_from_name" : "Universidad Tecnica Nacional",
+"email_smtp_host" : "smtp.gmail.com",
+"email_smtp_port" : "465",
+"email_smtp_user" : "elodia900@gmail.com",
+"email_smtp_pass" : "2012Anarkista",
+"email_batch_limit" : "10"
+}
