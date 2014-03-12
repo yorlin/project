@@ -3,11 +3,15 @@
 "database_name" :  "proyecto1",
 "database_user" :  "root",
 "database_pass" :  "",
-"email_from" : "elodia900@gmail.com",
+"email_to" : "yorlinsolis94@gmail.com",
+"email_from" : "yorlinsolis94@gmail.com",
 "email_from_name" : "Universidad Tecnica Nacional",
 "email_smtp_host" : "smtp.gmail.com",
 "email_smtp_port" : "465",
-"email_smtp_user" : "elodia900@gmail.com",
-"email_smtp_pass" : "2012Anarkista",
-"email_batch_limit" : "10"
+"email_smtp_user" : "yorlinsolis94@gmail.com",
+"email_smtp_pass" : "mariabelenaylinfabiola",
+"email_name" :"Sistemas UTN",
+"smtp_debug":"2",
+"SMTPAuth":"true",
+"SMTPSecure":"ssl"
 }
