@@ -6,7 +6,7 @@ date_default_timezone_set("America/Costa_Rica");
 $fecha = date("dmY");
 $fila = "";
 $ruta = 'C:\\xampp\\htdocs\\proyecto1\\' .$fecha.'.csv';//guarda la ruta del archivo csv
-echo $ruta;
+
 $numero=0;
 if (($Archivo = fopen($ruta,'a+')) !== FALSE) {//guarda la ruta establecida en la variable archivo
 
@@ -14,23 +14,23 @@ $mysqli = new mysqli("localhost", "root", "", "proyecto1") //hace la conexion a 
 or die('No se pudo conectar: ');
 
 while (($datos = fgetcsv($Archivo, 1000, ",")) !== FALSE) {//recorre el archivo
-$numero = count($datos);
 
+$numero++;
 foreach ($datos as $row) {// recoorre el archivo guardandolo en la variable fila
     $fila .= "'".$row."'".",";
-    echo $fila."\n";
+
 }
 $fila = substr($fila, 0, -1);
 
 
-echo $fila."\n";
+
 
 
 // Realizar una consulta MySQL
 mysqli_query($mysqli,'INSERT INTO `registro`(`Nombre`, `Apellido` ,`Cedula`, `Telefono`,`Correo`) VALUES ('.$fila.')')
 or die('Consulta fallida: '.mysqli_error($mysqli)); 
 
-echo $fila."\n";
+
 
 // Cerrar la conexión
 $fila = "";
